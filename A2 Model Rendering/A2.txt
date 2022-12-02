@@ -9,7 +9,7 @@ Rendering is done in three passes:
  - In pass 2, edges are detected by computing the Laplacian of the
    depth at each pixel.
 
- - In pass 3, the object is rendered using cel shading (i.e. quantized
+ - In pass 3, the object is rendered using cel shading (i.e. quantized    - MY CODE
    diffuse shading) where the Laplacian is below a threshold, and
    using a black outline otherwise.  But this would result in a black
    outline that is too narrow so, instead, a fragment is coloured
@@ -92,7 +92,7 @@ Step 2 (Pass 2)
   texture in the lower-right corner.  Bright pixels will indicate
   large positive values.
 
-Step 3 (Pass 3)
+Step 3 (Pass 3)		- MY CODE
 
   In Pass 3, again, all pixels are written to, so a fragment shader is
   executed for each pixel.

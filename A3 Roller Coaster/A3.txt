@@ -27,22 +27,22 @@ Do the following:
    easiest if you create a Cube class (like the Sphere and Cylinder)
    and then instantiate a scaled cube for the box.  [4 marks]
 
-4. Implement Train::advance() to move the train along the track.  This
+4. Implement Train::advance() to move the train along the track.  This   - MY CODE
    function adjusts 'pos' and should vary the speed ACCORDING TO SOME
    PHYSICAL MODEL.  Start with a constant speed, then add the
    physics. [4 marks]
 
-5. Implement Scene::drawAllTrack() to draw tracks in place of the
+5. Implement Scene::drawAllTrack() to draw tracks in place of the   - MY CODE
    spline curve.  Choose your own way of drawing the tracks.  Start
    with a very simple smooth surface, then improve it to have two
    rails.  Then add ties between the rails.  [6 marks]
 
-6. Create a novel roller coaster scene.  You should use a different
+6. Create a novel roller coaster scene.  You should use a different   - MY SCENE
    terrain than the one provided.  You may use heightfields and
    matching textures from other sources.  Show an interesting
    track. [1 mark]
 
-7. Add some novel features of your choosing [5 marks].  Some
+7. Add some novel features of your choosing [5 marks].  Some       - NOT IMPLEMENTED :(
    possibilities are:
 
      - Have multiple connected cars that can bounce around slightly

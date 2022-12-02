@@ -1,6 +1,6 @@
 You are to add code to a raytracer to do the following:
 
-  Russian Roulette
+  Russian Roulette - MY CODE
 
   Pixel antialising with jittering
 
@@ -13,4 +13,6 @@ After getting your code working, create an interesting scene that uses
 these effects.  You may use digital models from elsewhere and may use
 3D editors to create your scene.  If you do that, the objects will
 have to be in Wavefront (.obj) format.  Note that not all Wavefront
-objects are parsable by the code here.
+objects are parsable by the code here. - MY CODE
+
+(I included the Russian Roulette code snippets, as well as the unique scene created with these effects)
