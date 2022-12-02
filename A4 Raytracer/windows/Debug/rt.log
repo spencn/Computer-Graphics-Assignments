@@ -1,0 +1,4 @@
+﻿  scene.cpp
+C:\Users\spenc\Documents\GitHub\CISC454Assignment4\src\scene.cpp(183,61): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\spenc\Documents\GitHub\CISC454Assignment4\src\scene.cpp(188,67): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  rt.vcxproj -> C:\Users\spenc\Documents\GitHub\CISC454Assignment4\windows\Debug\rt.exe

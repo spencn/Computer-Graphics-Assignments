@@ -1,0 +1,2 @@
+C:\Users\spenc\Documents\GitHub\CISC454Assignment4\windows\Debug\rt.exe
+C:\Users\spenc\Documents\GitHub\CISC454Assignment4\windows\Debug\rt.pdb

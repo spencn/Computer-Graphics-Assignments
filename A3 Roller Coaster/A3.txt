@@ -1,0 +1,81 @@
+Your task is to implement a roller coaster simulator.  You may work in
+groups of two, except that grad students must work individually.
+
+On Linux and MacOS, run the program as
+
+  ./roller data/coaster1.txt
+
+On Windows Visual Studio, include "data\coaster1.txt" in the Debugging
+command-line arguments.
+  
+After the program starts, press '?' in the window to print a list of
+available commands.
+
+Do the following:
+
+1. Implement Spline::eval() to evaluate the spline at a given
+   parameter value.  Note that the function can return the value or
+   the derivative. [6 marks]
+
+2. Implement Spline::findLocalSystem() to return a local coordinate
+   system at a given parameter value.  This coordinate system is quite
+   important: it is used to draw the track and to position the train
+   on the track.  Use the derivative from Spline::eval(). [2 marks]
+
+3. Implement Train::draw() to draw at least one train car at the
+   current position.  Start with a simple box, then improve it.  It's
+   easiest if you create a Cube class (like the Sphere and Cylinder)
+   and then instantiate a scaled cube for the box.  [4 marks]
+
+4. Implement Train::advance() to move the train along the track.  This
+   function adjusts 'pos' and should vary the speed ACCORDING TO SOME
+   PHYSICAL MODEL.  Start with a constant speed, then add the
+   physics. [4 marks]
+
+5. Implement Scene::drawAllTrack() to draw tracks in place of the
+   spline curve.  Choose your own way of drawing the tracks.  Start
+   with a very simple smooth surface, then improve it to have two
+   rails.  Then add ties between the rails.  [6 marks]
+
+6. Create a novel roller coaster scene.  You should use a different
+   terrain than the one provided.  You may use heightfields and
+   matching textures from other sources.  Show an interesting
+   track. [1 mark]
+
+7. Add some novel features of your choosing [5 marks].  Some
+   possibilities are:
+
+     - Have multiple connected cars that can bounce around slightly
+       independently, but remain connected.  Worth up to 3 marks if
+       done well, 1 mark if done without much novelty.
+
+     - Have a mode in which the viewpoint moves with the train.  Worth
+       up to 3 marks.
+
+     - Add support structure under the tracks.  Worth up to 4 marks if
+       done well.
+
+     - Add a parameter at each control point to let you control the
+       tilt of the track at that point.  Show the tilt and provide a
+       handle so that it can be edited with the mouse.  Use it when
+       computing the local coordinate system.  This lets you make
+       loops.  Worth up to 5 marks.
+
+     - Have a section of track that lifts the cars to the top and then
+       releases them.  Animate the lifting mechanism.  Worth up to
+       5 marks.
+
+     - Add a feature to import and position objects.  The objects
+       should be in a common format (e.g. STL or Wavefront) and should
+       be specified in the scene file, along with its position and
+       orientation in the world.  This is how you get the roller
+       coaster to go through a tunnel or how you get a triceratops on
+       your terrain.  Worth up to 4 marks.
+
+     - Populate your terrain with trees that are *procedurally*
+       generated at run-time.  Worth up to 5 marks.
+
+     - Ask the instructor what other features could be worth.
+
+
+

@@ -1,0 +1,74 @@
+# # Test of soft shadows
+
+eye        
+  -34.0311 15.0962 65.7887
+  -1.71784 16.2851 3.02966
+  -0.0302912 0.999536 0.00333941
+  0.954249
+
+light
+  20 60 20
+  0.7 0.7 0.7
+
+
+material
+  white       # name
+  0 0 0       # ambient reflectivity (Ka)
+  1 1 1       # diffuse reflectivity (Kd)
+  0 0 0       # specular reflectivity (Ks)
+  10          # shininess (n)
+  1           # glossiness (g)
+  0 0 0       # emission (Ie)
+  1           # opacity (alpha)
+  -           # texture filename (- means none)
+  -           # bump map filename (- means none)
+
+material
+  blue         # name
+  .09 .02 .03 # ambient reflectivity (Ka)
+  0 0 1    # diffuse reflectivity (Kd)
+  0 0 0       # specular reflectivity (Ks)
+  10          # shininess (n)
+  1           # glossiness (g)
+  0 0 0       # emission (Ie)
+  1           # opacity (alpha)
+  -           # texture filename
+  -           # bump map filename (- means none)
+
+material
+  light       # name
+  0 0 0       # ambient reflectivity (Ka)
+  0 0 0       # diffuse reflectivity (Kd)
+  0 0 0       # specular reflectivity (Ks)
+  10          # shininess (n)
+  1           # glossiness (g)
+  .2 .4 .2    # emission (Ie)
+  1           # opacity (alpha)
+  -           # texture filename
+  -           # bump map filename (- means none)
+
+# # floor
+
+triangle
+  -50.0 -50.0 14.0
+   50.0 -50.0 14.0
+   50.0  50.0 14.0
+  blue
+
+triangle
+   50.0  50.0 14.0
+  -50.0  50.0 14.0
+  -50.0 -50.0 14.0
+  blue
+
+sphere
+  1           # radius
+  0 0 0       # centre
+  light         # material name
+
+  wavefront triceratops.obj
+
+
+
+
+
