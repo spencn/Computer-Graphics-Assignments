@@ -3,3 +3,5 @@
 
 I do not claim to have written all the code. Within the A*.txt files I will have written which code snippets I added.
 The parts of the assignments were done by my great classmate.
+
+Everything not outlined in those txt files will have been given by professor, either code they have wrote, or library files.
